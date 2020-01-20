@@ -17,6 +17,9 @@ public class DemoDbHelper extends SQLiteOpenHelper {
      @Override
     public void onCreate(SQLiteDatabase db) {
 
+        db.execSQL("Create TABLE Tracking (Longitude DOUBLE,Latitude DOUBLE,Date STRING,Hour STRING)");
+
+
     }
 
     @Override
